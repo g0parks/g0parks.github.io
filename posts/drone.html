@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The drone that taught me how to use an LLM · Parker Brand</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <p class="back"><a href="../">← Parker Brand</a></p>
+  <article class="post">
+    <h1>The drone that taught me how to use an LLM</h1>
+    <p class="meta">~2023 · FPV drones, Betaflight, PID tuning</p>
+
+    <p>The drones came from a trade. I'd set up a scraper (with an LLM's help) to watch Facebook Marketplace for underpriced stuff and odd trade offers, and it flagged a guy selling a whole FPV setup. It was listed around $3,500, or he'd trade it for a specific kind of ocean kayak. I found a similar kayak for $800, put it on the car and drove it out to him. That's how I ended up with a table full of drones and no idea how to tune them.</p>
+
+    <figure><img src="../img/fleet.jpg" alt="A table covered in FPV drones, goggles and batteries"><figcaption>The haul from the kayak trade.</figcaption></figure>
+
+    <p>Flying them was the easy part. Every quad runs a PID control loop, and the P, I and D values decide how it reacts to your sticks and to the air: how hard it corrects, how it settles, whether it wobbles coming out of a dive. I could feel what was wrong. I couldn't have told you which number caused it.</p>
+
+    <p>So I tried something that felt a little like cheating at the time. I pulled the PID values and the relevant parts of the config off the flight controller, pasted them into ChatGPT, and described how it flew. I described it the only way I could, in pilot terms: floaty in the turns, a little bounce when the sticks snap back to center after punching forward, I want it to feel locked in. It came back with what each value was doing, what to change, and why.</p>
+
+    <p>That was the light bulb. When I hit a gap in what I know, it usually means one of two things: drop it, or spend a few weekends in forum threads until I understand enough to start tweaking. This skipped the line. I got a working model of the system first, then learned the details by changing things and flying.</p>
+
+    <p>What took me longer to appreciate is that the whole thing depended on my side of the conversation. The model could do PID math all day. It couldn't fly the drone. The useful input was me knowing the outcome I wanted and describing a feel precisely enough to turn into numbers. That's a skill of its own, and it's how I've used these tools ever since: know what the end state looks like, know roughly what's possible, and use the model to close the distance.</p>
+
+    <figure><img src="../img/bench.jpg" alt="A tiny drone flight controller under a magnifying glass on a soldering bench"><figcaption>Soldering a flight controller under the magnifier.</figcaption></figure>
+  </article>
+  <p class="back"><a href="../">← Back to everything</a></p>
+</main>
+</body>
+</html>
